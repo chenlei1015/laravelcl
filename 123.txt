@@ -8,6 +8,6 @@
         adc_id,
         sop_mgr_id,
         comment,//事故描述
-        operator_id
+        operator_id//创建人ID
     }
 }
