@@ -17,6 +17,6 @@ Route::get('/', function () {
 
 Route::get('/weather', 'Weather@get_weather');
 
-Route::get('/api/chenlei', 'ChenLei@getApi');
+Route::get('/api/admin', 'ChenLei@getApi');
 
-Route::get('/api/chenleiv2', 'ChenLei@getApiv2');
+Route::get('/api/customer', 'ChenLei@getApiv2');
