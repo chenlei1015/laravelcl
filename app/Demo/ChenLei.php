@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Demo;
 
 use RequestsApi;
+use App\Http\Controllers\Controller;
 
 class ChenLei extends Controller
 {
@@ -12,7 +13,7 @@ class ChenLei extends Controller
      */
     public function getApi()
     {
-        $file = file(__DIR__.'/../../../../beeper_admin_web/123.txt');
+        $file = file(__DIR__ . '/../../../beeper_admin_web/789.txt');
         foreach ($file as &$item) {
             $item = str_replace("\n", '', $item);
         }
@@ -25,7 +26,7 @@ class ChenLei extends Controller
      */
     public function getApiv2()
     {
-        $file = file(__DIR__.'/../../../../beeper_customer_web/789.txt');
+        $file = file(__DIR__ . '/../../../beeper_customer_web/789.txt');
         foreach ($file as &$item) {
             $item = str_replace("\n", '', $item);
         }

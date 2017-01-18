@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Demo;
 
 use RequestsApi;
+use App\Http\Controllers\Controller;
 
 class Weather extends Controller
 {

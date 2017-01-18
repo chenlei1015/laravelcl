@@ -15,8 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/weather', 'Weather@get_weather');
+Route::get('/weather', 'App\Demo\Weather@get_weather');
 
-Route::get('/api/admin', 'ChenLei@getApi');
+Route::group(['namespace' => 'App\Http\Controllers\Auth'], function () {
+    Route::get('login', 'LoginController@showLoginForm');
+    Route::get('register', 'RegisterController@showRegistrationForm');
+});
 
-Route::get('/api/customer', 'ChenLei@getApiv2');
+Route::group(['namespace' => 'App\V1\Home\Controllers'], function () {
+    Route::get('home', 'Home@index');
+});
