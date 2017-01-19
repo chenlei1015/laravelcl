@@ -10,6 +10,9 @@ class Home extends Controller
 
     public function index(Request $request) {
         $user = $request->user();
-        echo $user;
+        return [
+            'tpl' => 'err.tpl',
+            'data' => 'asdfasdfasdf'
+        ];
     }
 }
