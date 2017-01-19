@@ -54,6 +54,14 @@ class RegisterController extends Controller
         ]);
     }
 
+    public function showRegistrationForm()
+    {
+        return [
+            'tpl' => 'login/register.tpl',
+            'data' => []
+        ];
+    }
+
     /**
      * Create a new user instance after a valid registration.
      *
