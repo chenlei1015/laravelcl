@@ -1,8 +1,6 @@
-{%block name="title"%}
-	<div class="content">
-		<h1 style="width:100%; text-align: center; margin-top: 50px;font-size: 30px;">
-			首页
-		</h1>
+{%extends file="../common/layout.tpl"%}
+{%block name="content"%}
+	<div class="loginmsg">
 		<p>登录信息:
 			<div>
 				{%if $info.user%}

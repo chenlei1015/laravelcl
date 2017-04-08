@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Exceptions\BeeperException;
+use Illuminate\Http\Exception;
 use Config;
 use Validator;
 
@@ -27,6 +27,6 @@ abstract class Request extends FormRequest
     public function response(array $errors)
     {
         $errorCode = config('custom_code.params_invalid.code');
-        throw new BeeperException(head($errors)[0], $errorCode, null, 'warning');
+        throw new Exception(head($errors)[0], $errorCode, null, 'warning');
     }
 }
