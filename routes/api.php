@@ -20,6 +20,10 @@ Route::get('/user', function (Request $request) {
 Route::group(['namespace' => 'App\Demo'], function () {
     Route::get('/admin', 'ChenLei@getApi');
     Route::get('/customer', 'ChenLei@getApiv2');
+    Route::get('/test', 'ChenLei@test');
+    Route::get('/test2', 'ChenLei@test2');
+    Route::get('/testsetredis', 'ChenLei@testSetRedis');
+    Route::get('/testgetredis', 'ChenLei@testGetRedis');
 });
 
 
