@@ -11,18 +11,18 @@
 |
 */
 
-//Route::get('/', function () {
-//    return redirect('/home');
-//});
+Route::get('/', function () {
+    return redirect('/home');
+});
 //
 //Route::group(['namespace' => 'App\Http\Controllers\Auth'], function () {
 //    Route::get('login', 'LoginController@showLoginForm');
 //    Route::get('register', 'RegisterController@showRegistrationForm');
 //});
 
-//Route::group(['namespace' => 'App\V1\Home\Controllers'], function () {
-//    Route::get('home', 'Home@index');
-//});
+Route::group(['namespace' => 'App\V1\Home\Controllers'], function () {
+    Route::get('home', 'Home@index');
+});
 
 //Auth::routes();
 

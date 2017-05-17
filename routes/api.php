@@ -37,4 +37,9 @@ use Illuminate\Http\Request;
 Route::group(['namespace' => 'App\V1\Home\Controllers'], function () {
     Route::get('home', 'Home@index');
     Route::get('quick_sort', 'Home@quickSort');
+
+
 });
+Route::get('add_jobs', 'App\V1\Home\Controllers\Api\JobController@addJobs');
+
+Route::get('redis', 'App\V1\Home\Controllers\Api\JobController@redisTest');

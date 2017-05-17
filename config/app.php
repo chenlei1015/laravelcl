@@ -124,6 +124,8 @@ return [
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
+    'log_max_files' => env('LOG_MAX_FILES', 5),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -178,6 +180,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        VladimirYuldashev\LaravelQueueRabbitMQ\LaravelQueueRabbitMQServiceProvider::class,
 
     ],
 
